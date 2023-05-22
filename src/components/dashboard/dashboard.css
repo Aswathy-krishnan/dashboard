@@ -1,0 +1,35 @@
+.dashboard-main {
+  padding: 0 20px;
+  margin-top: 10px;
+}
+.card-display {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 20px;
+}
+.dashboard-content {
+    display: flex;
+    gap: 10px;
+
+}
+.budget-dashboard{
+    flex: 1;
+}
+
+.budget-card{
+    margin-bottom: 20px;
+}
+.budget-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+@media (max-width:  1200px) {
+    .dashboard-content{
+        flex-direction: column;
+    }
+ }
+ @media (max-width: 576px) { 
+    .budget-card{
+        grid-template-columns: repeat(2,1fr);
+    }
+ }
